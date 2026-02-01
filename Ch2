@@ -1,0 +1,18 @@
+import urllib.request
+# Source - https://stackoverflow.com/a/60671292
+# Posted by Rambod
+# Retrieved 2026-02-01, License - CC BY-SA 4.0
+
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+url = ("https://raw.githubusercontent.com/rickiepark/"
+       "llm-from-scratch/main/ch02/01_main-chapter-code/"
+       "the-verdict.txt")
+file_path = "the-verdict.txt"
+urllib.request.urlretrieve(url, file_path)
+
+with open("the-verdict.txt", "r", encoding="utf-8") as f:
+    raw_text = f.read()
+print("총 문자 개수:", len(raw_text))
+print(raw_text[:99])
