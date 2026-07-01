@@ -1,0 +1,8 @@
+{
+  "claudeCode.permissions.read": "allowed",
+  "claudeCode.permissions.edit": "allowed",
+  "claudeCode.permissions.write": "allowed",
+  "claudeCode.permissions.bash": "allowed",
+  "claudeCode.permissions.webSearch": "allowed",
+  "claudeCode.permissions.webFetch": "allowed"
+}
